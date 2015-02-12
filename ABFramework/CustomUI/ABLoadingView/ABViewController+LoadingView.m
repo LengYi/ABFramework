@@ -11,13 +11,11 @@
 
 @implementation ABViewController (LoadingView)
 
-- (void)addLoadingView;
-{
+- (void)addLoadingView;{
     [self addLoadingViewWithSize:CGSizeZero];
 }
 
-- (void)addLoadingViewWithSize:(CGSize)size
-{
+- (void)addLoadingViewWithSize:(CGSize)size{
     [ABLoadingView setOnView:self.view
                   withTitlle:@"Loading..."
                    withImage:[UIImage imageNamed:@"loading_icon"]
@@ -25,8 +23,7 @@
                       suggestSize:size];
 }
 
-- (void)removeLoadingViewWithAnimated:(BOOL)animated
-{
+- (void)removeLoadingViewWithAnimated:(BOOL)animated{
     [ABLoadingView removeLoadingViewFormView:self.view animated:YES];
 }
 

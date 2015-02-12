@@ -17,6 +17,13 @@
 		3D58E4D41A8882CE004FC783 /* ABUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D58E4C61A8882CE004FC783 /* ABUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D58E4D51A8882CE004FC783 /* ABViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D58E4C91A8882CE004FC783 /* ABViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D58E4D61A8882CE004FC783 /* ABViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D58E4CA1A8882CE004FC783 /* ABViewController.m */; };
+		3DA195A71A8CCF9B008FFBA9 /* ABDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DA195A21A8CCF9B008FFBA9 /* ABDocument.h */; };
+		3DA195A81A8CCF9B008FFBA9 /* ABDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA195A31A8CCF9B008FFBA9 /* ABDocument.m */; };
+		3DA195A91A8CCF9B008FFBA9 /* ABPlistReadAndWrite.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DA195A41A8CCF9B008FFBA9 /* ABPlistReadAndWrite.h */; };
+		3DA195AA1A8CCF9B008FFBA9 /* ABPlistReadAndWrite.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA195A51A8CCF9B008FFBA9 /* ABPlistReadAndWrite.m */; };
+		3DA195AB1A8CCF9B008FFBA9 /* ABFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DA195A61A8CCF9B008FFBA9 /* ABFoundation.h */; };
+		3DA195B51A8CD003008FFBA9 /* ApplicationInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DA195B31A8CD003008FFBA9 /* ApplicationInfo.h */; };
+		3DA195B61A8CD003008FFBA9 /* ApplicationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA195B41A8CD003008FFBA9 /* ApplicationInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +50,13 @@
 		3D58E4C61A8882CE004FC783 /* ABUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABUI.h; sourceTree = "<group>"; };
 		3D58E4C91A8882CE004FC783 /* ABViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABViewController.h; sourceTree = "<group>"; };
 		3D58E4CA1A8882CE004FC783 /* ABViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABViewController.m; sourceTree = "<group>"; };
+		3DA195A21A8CCF9B008FFBA9 /* ABDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABDocument.h; sourceTree = "<group>"; };
+		3DA195A31A8CCF9B008FFBA9 /* ABDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABDocument.m; sourceTree = "<group>"; };
+		3DA195A41A8CCF9B008FFBA9 /* ABPlistReadAndWrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABPlistReadAndWrite.h; sourceTree = "<group>"; };
+		3DA195A51A8CCF9B008FFBA9 /* ABPlistReadAndWrite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABPlistReadAndWrite.m; sourceTree = "<group>"; };
+		3DA195A61A8CCF9B008FFBA9 /* ABFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABFoundation.h; sourceTree = "<group>"; };
+		3DA195B31A8CD003008FFBA9 /* ApplicationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationInfo.h; sourceTree = "<group>"; };
+		3DA195B41A8CD003008FFBA9 /* ApplicationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +102,8 @@
 				3D58E4681A887F40004FC783 /* ABFramework.h */,
 				3D58E4C01A8882CE004FC783 /* CustomUI */,
 				3D58E4C71A8882CE004FC783 /* MVC */,
-				3D58E4CD1A8882CE004FC783 /* Solution */,
+				3DA195B11A8CCFFB008FFBA9 /* Solution */,
+				3DA195A01A8CCF9B008FFBA9 /* Foundation */,
 				3D58E4CE1A8882CE004FC783 /* UIKitExpand */,
 				3D58E4CF1A8882CE004FC783 /* Vendor */,
 				3D58E4661A887F40004FC783 /* Supporting Files */,
@@ -174,13 +189,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		3D58E4CD1A8882CE004FC783 /* Solution */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Solution;
-			sourceTree = "<group>";
-		};
 		3D58E4CE1A8882CE004FC783 /* UIKitExpand */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +203,43 @@
 			path = Vendor;
 			sourceTree = "<group>";
 		};
+		3DA195A01A8CCF9B008FFBA9 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				3DA195A11A8CCF9B008FFBA9 /* ABFoundation */,
+				3DA195A61A8CCF9B008FFBA9 /* ABFoundation.h */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		3DA195A11A8CCF9B008FFBA9 /* ABFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				3DA195A21A8CCF9B008FFBA9 /* ABDocument.h */,
+				3DA195A31A8CCF9B008FFBA9 /* ABDocument.m */,
+				3DA195A41A8CCF9B008FFBA9 /* ABPlistReadAndWrite.h */,
+				3DA195A51A8CCF9B008FFBA9 /* ABPlistReadAndWrite.m */,
+			);
+			path = ABFoundation;
+			sourceTree = "<group>";
+		};
+		3DA195B11A8CCFFB008FFBA9 /* Solution */ = {
+			isa = PBXGroup;
+			children = (
+				3DA195B21A8CD003008FFBA9 /* AppleInfo */,
+			);
+			path = Solution;
+			sourceTree = "<group>";
+		};
+		3DA195B21A8CD003008FFBA9 /* AppleInfo */ = {
+			isa = PBXGroup;
+			children = (
+				3DA195B31A8CD003008FFBA9 /* ApplicationInfo.h */,
+				3DA195B41A8CD003008FFBA9 /* ApplicationInfo.m */,
+			);
+			path = AppleInfo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -205,8 +250,12 @@
 				3D58E4D51A8882CE004FC783 /* ABViewController.h in Headers */,
 				3D58E4D21A8882CE004FC783 /* ABViewController+LoadingView.h in Headers */,
 				3D58E4D01A8882CE004FC783 /* ABLoadingView.h in Headers */,
+				3DA195B51A8CD003008FFBA9 /* ApplicationInfo.h in Headers */,
 				3D58E4D41A8882CE004FC783 /* ABUI.h in Headers */,
+				3DA195A71A8CCF9B008FFBA9 /* ABDocument.h in Headers */,
 				3D58E4691A887F40004FC783 /* ABFramework.h in Headers */,
+				3DA195AB1A8CCF9B008FFBA9 /* ABFoundation.h in Headers */,
+				3DA195A91A8CCF9B008FFBA9 /* ABPlistReadAndWrite.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +355,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA195B61A8CD003008FFBA9 /* ApplicationInfo.m in Sources */,
 				3D58E4D11A8882CE004FC783 /* ABLoadingView.m in Sources */,
+				3DA195AA1A8CCF9B008FFBA9 /* ABPlistReadAndWrite.m in Sources */,
+				3DA195A81A8CCF9B008FFBA9 /* ABDocument.m in Sources */,
 				3D58E4D61A8882CE004FC783 /* ABViewController.m in Sources */,
 				3D58E4D31A8882CE004FC783 /* ABViewController+LoadingView.m in Sources */,
 			);

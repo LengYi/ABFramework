@@ -10,25 +10,20 @@
 
 @implementation ABLoadingView
 
-+ (ABLoadingView *)setOnView:(UIView *)view withTitlle:(NSString *)title withImage:(UIImage *)image animated:(BOOL)animated;
-{
++ (ABLoadingView *)setOnView:(UIView *)view withTitlle:(NSString *)title withImage:(UIImage *)image animated:(BOOL)animated{
     return [self setOnView:view withTitlle:title withImage:image animated:animated suggestSize:CGSizeZero];
 }
 
-+ (ABLoadingView *)setOnView:(UIView *)view withTitlle:(NSString *)title withImage:(UIImage *)image animated:(BOOL)animated suggestSize:(CGSize)size
-{
-    if (!title)
-    {
++ (ABLoadingView *)setOnView:(UIView *)view withTitlle:(NSString *)title withImage:(UIImage *)image animated:(BOOL)animated suggestSize:(CGSize)size{
+    if (!title){
         title = @"";
     }
     
-    if (size.width <= 0)
-    {
+    if (size.width <= 0){
         size.width = 0;
     }
     
-    if (size.height <= 0)
-    {
+    if (size.height <= 0){
         size.height = 0;
     }
     
@@ -58,8 +53,7 @@
     [view addConstraint:[NSLayoutConstraint constraintWithItem:loadingView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:size.width]];
     [view addConstraint:[NSLayoutConstraint constraintWithItem:loadingView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:size.height]];
     
-    if (animated)
-    {
+    if (animated){
         loadingView.alpha = 0;
         [UIView animateWithDuration:1 animations:^{
             loadingView.alpha = 1;
@@ -69,29 +63,23 @@
 }
 
 
-+ (void)removeLoadingViewFormView:(UIView*)view animated:(BOOL)animated
-{
++ (void)removeLoadingViewFormView:(UIView*)view animated:(BOOL)animated{
     ABLoadingView *loadingView = nil;
-    for (UIView *tView in view.subviews)
-    {
-        if ([tView isKindOfClass:[ABLoadingView class]])
-        {
+    for (UIView *tView in view.subviews){
+        if ([tView isKindOfClass:[ABLoadingView class]]){
             loadingView = (ABLoadingView *)tView;
             break;
         }
     }
     
-    if (loadingView)
-    {
-        if (animated)
-        {
+    if (loadingView){
+        if (animated){
             [UIView animateWithDuration:0.3 animations:^{
                 loadingView.alpha = 0;
             } completion:^(BOOL finished) {
                 [loadingView removeFromSuperview];
             }];
-        }else
-        {
+        }else{
             [loadingView removeFromSuperview];
         }
     }

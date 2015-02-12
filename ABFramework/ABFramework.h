@@ -22,6 +22,7 @@ FOUNDATION_EXPORT const unsigned char ABFrameworkVersionString[];
 /*MVC*/
 
 /*Solution*/
+#import "ApplicationInfo.h"
 
 /*UIKitExpand*/
 
