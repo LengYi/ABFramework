@@ -20,7 +20,7 @@ FOUNDATION_EXPORT const unsigned char ABFrameworkVersionString[];
 #import "ABUI.h"
 
 /*MVC*/
-
+#import "ABViewController.h"
 /*Solution*/
 #import "ApplicationInfo.h"
 
